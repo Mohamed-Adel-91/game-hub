@@ -6,6 +6,7 @@ import { Platform } from '../hooks/useGames';
 import { HStack, Icon } from '@chakra-ui/react';
 import { IconType } from "react-icons/lib";
 
+
 interface Props {
     platforms: Platform[]
 }
