@@ -1,6 +1,7 @@
 import {
     Button,
     HStack,
+    Heading,
     Image,
     List,
     ListItem,
@@ -20,6 +21,9 @@ const GenreList = ({ selectedGenre, onSelectedGenre }: Props) => {
     if (error) return null;
     return (
         <>
+            <Heading fontSize={"2xl"} marginBottom={4}>
+                Genres
+            </Heading>
             <List>
                 {data.map((genre) => (
                     <ListItem key={genre.id} paddingY="5px">
@@ -27,9 +31,11 @@ const GenreList = ({ selectedGenre, onSelectedGenre }: Props) => {
                             <Image
                                 boxSize={"32px"}
                                 borderRadius={8}
+                                objectFit={"cover"}
                                 src={getCroppedImageUrl(genre.image_background)}
                             />
                             <Button
+                                whiteSpace="normal"
                                 fontSize="lg"
                                 variant="link"
                                 textAlign="start"
