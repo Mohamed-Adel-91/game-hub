@@ -47,7 +47,7 @@ function App() {
                     />
                 </GridItem>
             </Show>
-            <GridItem area="main">
+            <GridItem area="main" paddingBottom={5}>
                 <GameHeading gameQuery={gameQuery} />
                 <HStack
                     justifyContent={"space-between"}
